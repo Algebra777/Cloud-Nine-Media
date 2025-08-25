@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ============================
+         HEAD / META & ASSETS
+       ============================ -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CloudNine Media</title>
+  <meta name="description"
+    content="CloudNine Media — Ibadan-based creative studio for branding, logo design, book covers, publishing, pencil drawing. We transform ideas into compelling visuals." />
+  <meta name="keywords"
+    content="CloudNine Media, branding, logo design, book cover design, Ibadan, Nigeria, graphic design" />
+  <meta name="author" content="CloudNine Media" />
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="CloudNine Media" />
+  <meta property="og:description" content="Branding, Logos, Book Covers & Flyers." />
+  <meta property="og:type" content="website" />
+  <!-- TODO: UPDATE THIS TO YOUR LIVE URL WHEN READY -->
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:image" content="img/cloudlogo.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- FAVICON (INLINE SVG) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%23ff7a00%22/><text x=%2250%25%22 y=%2258%25%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22>C9</text></svg>"/>
+
+  <!-- FONTS (INTER + POPPINS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- FONT AWESOME FOR SOCIAL ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- SITE STYLESHEET -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ============================
+         HEADER / NAVIGATION
+       ============================ -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-mark">
+          <img src="img/cloudlogo.jpg" alt="CloudNine Media logo" width="48" height="48" decoding="async" />
+        </div>
+        <div>
+          <div style="font-size: 1.12rem;padding-bottom: 5px;">CloudNine Media</div>
+          <div class="tag">Branding • Logos • Book Covers</div>
+        </div>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+
+      <nav aria-label="Primary Navigation">
+        <ul id="menu">
+          <li><a href="#welcome">Welcome</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================
+         MAIN CONTENT
+       ============================ -->
+  <main>
+    <!-- ============================
+           HERO / WELCOME SECTION
+         ============================ -->
+    <section id="welcome" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="pill">Welcome to CloudNine</span>
+          <h1>
+            We make branding <span style="color: var(--orange)">simple, striking,</span>
+            and strategic.
+          </h1>
+          <p>Logo Design, Graphics Design, Branding, Book covers.</p>
+
+          <div class="hero-actions">
+            <a class="btn"
+              href="https://wa.me/+2348065959001?text=Hi%20CloudNine%20Media!%20I%27d%20like%20to%20start%20a%20project.">Start
+              a Project</a>
+            <a class="btn btn-outline" href="#portfolio">See Portfolio</a>
+          </div>
+
+          <div class="hero-badges">
+            <span class="badge">Since 2017</span>
+            <span class="badge">Ibadan • NG</span>
+            <span class="badge">Fast Turnaround</span>
+          </div>
+
+          <!-- STATS -->
+          <div class="stats">
+            <div class="stat">
+              <b data-target="2500+">0</b>
+              <div class="divider"></div>
+              <div class="tag">Projects</div>
+            </div>
+            <div class="stat">
+              <b data-target="98">0</b>
+              <div class="divider"></div>
+              <div class="tag">Happy Clients</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="tag">Project Snapshot</div>
+          <div class="divider"></div>
+          <img alt="Showcase design preview" src="img/photo1.jpg" class="showcase-img" loading="lazy"
+            decoding="async" />
+          <h4 style="margin-top: 10px">A modern visual identity exploring bold typography</h4>
+          <p>Warm orange accents and clear hierarchy for a confident brand feel.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+           SERVICES SECTION
+         ============================ -->
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <p class="sub">
+          Core branding services to launch, refresh, and energize your brand.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <img src="img/logoVI.jpg" alt="Logo and Visual Identity samples"
+              style="width: 400%; border-radius: 20px; margin-bottom: 50px" loading="lazy" decoding="async" />
+            <h3>Logo &amp; Visual Identity</h3>
+            <p>Logos, color systems, typography, and brand guides that scale with you.</p>
+            <a class="btn btn-outline"
+              href="https://wa.me/+2348065959001?text=Hi%20CloudNine%20Media!%20I%27d%20like%20to%20start%20a%20project.">Get
+              Started</a>
+          </div>
+
+          <div class="card">
+            <img src="img/productdesign.jpg" alt="Product and package design examples"
+              style="width: 400%; border-radius: 20px; margin-bottom: 50px" loading="lazy" decoding="async" />
+            <h3>Product &amp; Package Design</h3>
+            <p>
+              Our team is made up of passionate visual makers, creative designers, skilled content creators, editors,
+              and animators. Backed by meticulous post-production and flawless execution, CloudNine Media ensures your
+              brand not only shines — but outshines.
+            </p>
+            <a class="btn btn-outline"
+              href="https://wa.me/+2348065959001?text=Hi%20CloudNine%20Media!%20I%27d%20like%20to%20start%20a%20project.">Get
+              Started</a>
+          </div>
+
+          <div class="card">
+            <img src="img/socialdesign.jpg" alt="Social media management visuals"
+              style="width: 400%; border-radius: 20px; margin-bottom: 50px" loading="lazy" decoding="async" />
+            <h3>Social Media Management</h3>
+            <p>Beautiful, fast websites that convert—with ongoing care if you need it.</p>
+            <a class="btn btn-outline"
+              href="https://wa.me/+2348065959001?text=Hi%20CloudNine%20Media!%20I%27d%20like%20to%20start%20a%20project.">Get
+              Started</a>
+          </div>
+
+          <div class="card">
+            <img src="img/bookD.jpg" alt="Book cover design gallery"
+              style="width: 400%; border-radius: 20px; margin-bottom: 50px" loading="lazy" decoding="async" />
+            <h3>Book Cover Design</h3>
+            <p>Fiction, non-fiction, academic—covers that capture attention and genre.</p>
+            <a class="btn btn-outline"
+              href="https://wa.me/+2348065959001?text=Hi%20CloudNine%20Media!%20I%27d%20like%20to%20start%20a%20project.">Get
+              Started</a>
+          </div>
+
+          <div class="card">
+            <img src="img/cloud.jpg" alt="Company profile and story design"
+              style="width: 400%; border-radius: 20px; margin-bottom: 50px" loading="lazy" decoding="async" />
+            <h3>Company Profile &amp; Story</h3>
+            <p>Clear, persuasive profiles that sell your vision and capability.</p>
+            <a class="btn btn-outline"
+              href="https://wa.me/+2348065959001?text=Hi%20CloudNine%20Media!%20I%27d%20like%20to%20start%20a%20project.">Get
+              Started</a>
+          </div>
+
+          <div class="card">
+            <img src="img/marketdesign.jpg" alt="Marketing collateral samples"
+              style="width: 400%; border-radius: 20px; margin-bottom: 50px" loading="lazy" decoding="async" />
+            <h3>Marketing Collateral</h3>
+            <p>Pitch decks, social kits, brochures, and all the little brand details.</p>
+            <a class="btn btn-outline"
+              href="https://wa.me/+2348065959001?text=Hi%20CloudNine%20Media!%20I%27d%20like%20to%20start%20a%20project.">Get
+              Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+           PORTFOLIO SECTION
+         ============================ -->
+    <section id="portfolio" style="background: var(--bg-soft)">
+      <div class="container">
+        <h2>Selected Work</h2>
+        <p class="sub">A quick peek at designs we’ve crafted for clients across industries.</p>
+
+        <div class="grid-4">
+          <a class="folio" aria-label="Brand Identity sample">
+            <img src="img/brand.jpg" alt="Brand identity project" loading="lazy" decoding="async" />
+            <div class="foliobar"><span>Brand Identity</span><span>→</span></div>
+          </a>
+
+          <a class="folio" aria-label="Flyer designs">
+            <img src="img/flyerdesign.jpg" alt="Flyer designs" loading="lazy" decoding="async" />
+            <div class="foliobar"><span>Flyers</span><span>→</span></div>
+          </a>
+
+          <a class="folio" aria-label="Book cover design">
+            <img src="img/bookdesign.jpg" alt="Book cover design" loading="lazy" decoding="async" />
+            <div class="foliobar"><span>Book Cover</span><span>→</span></div>
+          </a>
+
+          <a class="folio" aria-label="Wall & Interior Decoration">
+            <img src="img/wall.jpg" alt="Wall & Interior Decoration" loading="lazy" decoding="async" />
+            <div class="foliobar"><span>Wall & Interior Decoration</span><span>→</span></div>
+          </a>
+
+          <a class="folio" aria-label="Pencil Drawing">
+            <img src="img/pencil.jpg" alt="Pencil drawing artwork" loading="lazy" decoding="async" />
+            <div class="foliobar"><span>Pencil Drawing</span><span>→</span></div>
+          </a>
+
+          <a class="folio" aria-label="Social Media Management">
+            <img src="img/photo4.jpg" alt="Social media kit" loading="lazy" decoding="async" />
+            <div class="foliobar"><span>Social Media Management</span><span>→</span></div>
+          </a>
+
+          <a class="folio" aria-label="Framing">
+            <img src="img/photo2.jpg" alt="Framed art piece" loading="lazy" decoding="async" />
+            <div class="foliobar"><span>Framing</span><span>→</span></div>
+          </a>
+
+          <a class="folio" aria-label="Logo Design">
+            <img src="img/logodesign.jpg" alt="Logo design collection" loading="lazy" decoding="async" />
+            <div class="foliobar"><span>Logo Design</span><span>→</span></div>
+          </a>
+
+          <a class="folio" aria-label="Digital Painting">
+            <img src="img/photo3.jpg" alt="Digital painting" loading="lazy" decoding="async" />
+            <div class="foliobar"><span>Digital Painting</span><span>→</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+           ABOUT SECTION
+         ============================ -->
+    <section id="about">
+      <div class="container about">
+        <div class="hero-card">
+          <div class="tag">
+            <h2>About Us</h2>
+          </div>
+          <div class="divider"></div>
+          <p class="sub">
+            CloudNine Media, a proud subsidiary of Cloudnine Global Arts Limited, is one of the leading media
+            production companies in Ibadan, Southwest Nigeria. We specialize in delivering cutting-edge visual
+            productions designed to transform your brand and business goals into compelling, unforgettable visual
+            stories.
+          </p>
+          <p>
+            Our passion is simple — turning ideas into visuals that inspire, connect, and leave lasting impressions.
+            Whether you’re a business, organization, or individual, CloudNine Media is your trusted partner for
+            creating exceptional designs that stand out in today’s competitive world.
+          </p>
+
+          <div class="hero-card">
+            <div class="tag"> <b>Our Core Values</b></div>
+            <div class="divider"></div>
+            <ul>
+              <li>Inspiration – Sparking ideas that move people</li>
+              <li>Integrity – Building trust through honesty and excellence</li>
+              <li>Creativity – Delivering fresh, innovative concepts</li>
+              <li>Versatility – Adapting to your unique needs</li>
+              <li>Potential – Helping your brand reach new heights</li>
+              <li>Affordability – Quality that fits your budget</li>
+              <li>Loyalty – Committed to your success</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="tag">Vision Statement</div>
+          <div class="divider"></div>
+          <p>
+            <a>To be one of the world’s
+              most respected media companies
+              creating and promoting world-class visuals that inspire,
+              connect, and endure.</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="tag">Mission Statement</div>
+        <div class="divider"></div>
+        <p>
+          Our mission is to craft visuals that connect
+          brands with their ideal audience.
+          Through top-notch design and visual storytelling,
+          we help businesses explain, inspire, advocate, and motivate
+          telling stories straight from the heart.
+        </p>
+      </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="tag">Why brands choose us</div>
+        <div class="divider"></div>
+        <p>
+          We keep things simple---clear pricing, rapid drafts, and frequent communication. Most projects kick off with
+          a 30-minute consult to align on goals, audience, and success metrics.
+        </p>
+        <a class="btn"
+          href="https://wa.me/+2348065959001?text=Hi%20CloudNine%20Media!%20I%27d%20like%20to%20book%20a%20free%20consult.">Book
+          a Free Consult</a>
+      </div>
+      </div>
+    </section>
+
+    <!-- ============================
+           CLIENTS SECTION
+         ============================ -->
+    <section id="clients" style="background: var(--bg-soft)">
+      <div class="container">
+        <h2>Some of Our Clients</h2>
+        <p class="sub">We’ve proudly worked with reputable organizations and individuals such as:</p>
+        <div class="clients">
+          <div class="client"><img src="img/alex.jpg" alt="Client: Dr. Alex Balogun" loading="lazy"
+              decoding="async" />Dr.
+            Alex Balogun</div>
+          <div class="client"><img src="img/DMS.jpg" alt="Client: Digital Marketing School" loading="lazy"
+              decoding="async" />Digital Marketing School</div>
+          <div class="client"><img src="img/solution.jpg" alt="Client: Solution Impact Academy" loading="lazy"
+              decoding="async" />Solution Impact Academy</div>
+          <div class="client"><img src="img/galilee.jpg" alt="Client: Galilee Foundation" loading="lazy"
+              decoding="async" />Galilee Foundation</div>
+          <div class="client"><img src="img/royal.jpg" alt="Client: Royal Ray Publishing" loading="lazy"
+              decoding="async" />Royal Ray Publishing</div>
+          <div class="client"><img src="img/melody.jpg" alt="Client: Melody Francis" loading="lazy"
+              decoding="async" />Melody Francis</div>
+          <div class="client"><img src="img/naomeal.jpg" alt="Client: Naomeal" loading="lazy" decoding="async" />Naomeal
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+           TESTIMONIALS SECTION
+         ============================ -->
+    <section id="testimonials">
+      <div class="container slider">
+        <h2>What Clients Say</h2>
+        <p class="sub">A few words from people we’ve partnered with.</p>
+
+        <div class="slides" id="slides">
+          <div class="slide">
+            <div class="t-card">
+              <div class="t-head">
+                <div class="avatar" style="background-image: url('img/alex.jpg')"></div>
+                <div>
+                  <b>Dr. Alex Balogun</b>
+                  <div class="tag">Coach • CEO VIP Business School et Ecrivain</div>
+                </div>
+              </div>
+              <p>“The logo is simple and confident. Exactly what we needed. Process was smooth and professional.”</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="t-card">
+              <div class="t-head">
+                <div class="avatar" style="background-image: url('img/melody.jpg')"></div>
+                <div>
+                  <b>Melody Francis</b>
+                  <div class="tag">Creative Director at Melwash</div>
+                </div>
+              </div>
+              <p>“People comment on our packaging all the time. It’s boosted self appeal and sales.”</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="t-card">
+              <div class="t-head">
+                <div class="avatar" style="background-image: url('img/naomy.jpg')"></div>
+                <div>
+                  <b>Olaoyo Naomy.</b>
+                  <div class="tag">Naomeal Foods</div>
+                </div>
+              </div>
+              <p>“Thank you so much for the design, very attractive. Quick iterations, clean designs, great
+                communication.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+           CONTACT / FORM SECTION
+         ============================ -->
+    <section id="contact">
+      <div class="container contact">
+        <!-- CONTACT FORM -->
+        <form action="https://formspree.io/f/meozdgrq" method="POST">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your full name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="_replyto" type="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="field">
+            <label for="service">Service</label>
+            <select id="service" name="service">
+              <option>Logo &amp; Visual Identity</option>
+              <option>Product &amp; Packaging</option>
+              <option>Book Cover Design</option>
+              <option>Framing</option>
+              <option>Advertising</option>
+              <option>Branding</option>
+              <option>Social Media Management</option>
+              <option>Marketing Collateral</option>
+              <option>Publishing</option>
+              <option>Pencil Drawing</option>
+              <option>Wall &amp; Interior Decoration</option>
+              <option>Other Design</option>
+              <option>Consultation</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Share goals, audience, timeline…"
+              required></textarea>
+          </div>
+
+          <!-- OPTIONAL NOTE ELEMENT USED BY JS DEMO -->
+          <p id="formNote" class="muted" aria-live="polite"></p>
+
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+
+        <!-- CONTACT CARD -->
+        <div class="hero-card">
+          <div class="tag">Contact</div>
+          <div class="divider"></div>
+          <p>
+            <b>CloudNine Media</b><br />Block 1, Plot 2, Omololu Olunloyo GRA, Adeoyo, Ring Road, Ibadan, Nigeria.
+          </p>
+          <p>
+            <a href="mailto:cloudninegloballimited@gmail.com">cloudninegloballimited@gmail.com</a><br />
+            <a href="tel:+2348065959001">+234 806 595 9001</a>
+          </p>
+          <div class="divider"></div>
+          <p class="muted">Prefer WhatsApp? Tap the orange button below.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================
+         FOOTER SECTION
+       ============================ -->
+  <footer>
+    <div class="container foot">
+      <div>
+        <h3 style="margin: 0 0 8px">CloudNine Media</h3>
+        <p class="muted">We transform brands with bold, functional design because e believe in quality, creativity, and
+          consistency, ensuring every project reflects our core values.</p>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Branding</a><br />
+        <a href="#services">Packaging</a><br />
+        <a href="#services">Graphics Design</a><br />
+        <a href="#services">Book Covers</a>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <a href="#about">About</a><br />
+        <a href="#portfolio">Portfolio</a><br />
+      </div>
+
+      <div>
+        <h4>Follow</h4>
+        <a href="https://www.facebook.com/CloudNineMediaIbadan" target="_blank" rel="noopener noreferrer"
+          aria-label="Facebook" class="social-link">
+          <i class="fab fa-facebook" aria-hidden="true"></i> Facebook
+        </a><br />
+
+        <a href="https://www.instagram.com/cloudnine__media" target="_blank" rel="noopener noreferrer"
+          aria-label="Instagram" class="social-link">
+          <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+        </a><br />
+      </div>
+    </div>
+
+    <div class="container" style="
+          padding: 16px 0;
+          border-top: 1px solid #1f2125;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 10px;
+        ">
+      <span class="tag">© <span id="year"></span> CloudNine Media. All rights reserved.</span>
+      <a class="btn btn-outline"
+        href="https://wa.me/+2348065959001?text=Hi%20CloudNine%20Media!%20I%27d%20like%20to%20start%20a%20project.">Start
+        a Project</a>
+    </div>
+  </footer>
+
+  <!-- ============================
+         FLOATING WHATSAPP BUTTON
+       ============================ -->
+  <div class="wa">
+    <a href="https://wa.me/+2348065959001?text=Hi%20CloudNine%20Media!%20I%27d%20like%20to%20start%20a%20project."
+      aria-label="WhatsApp Chat">💬</a>
+  </div>
+
+  <!-- ============================
+         COOKIE CONSENT BANNER
+       ============================ -->
+  <div id="cookie" class="cookie" role="dialog" aria-live="polite" aria-label="Cookie consent">
+    <div class="row container">
+      <p>We use minimal cookies to improve your experience. By continuing, you agree to our cookie policy.</p>
+      <div style="display: flex; gap: 8px">
+        <button class="btn btn-outline" onclick="hideCookie(true)">Accept</button>
+        <button class="btn" onclick="hideCookie(false)">Deny</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================
+         SCRIPTS
+       ============================ -->
+  <script src="script.js"></script>
+</body>
+
+</html>
