@@ -202,6 +202,9 @@
     .hero {
       padding: 80px 0 40px;
       background: linear-gradient(180deg,#fff 0%, #fff 60%, var(--bg-soft) 100%);
+      /* justify-content: center; 
+      align-items: center;
+      text-align: center; */
     }
 
     .hero-grid {
@@ -231,27 +234,27 @@
       padding: 22px;
     }
 
-    .hero-badges {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin: 20px 0;
-    }
-
-    .hero-actions {
+  
+    .hero-badges, .hero-actions {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
       margin-top: 8px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
+
+  
 
     .stats {
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(2,1fr);
       gap: 12px;
       margin-top: 18px;
       border-position: center;
       grid-template-position: center;
+      
     }
 
     .stat {

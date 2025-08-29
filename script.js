@@ -119,10 +119,10 @@ function hideCookie(accepted) {
   cookieBox.style.display = "none";
 }
 
-document.addEventListener("contextmenu", e => e.preventDefault());
-document.addEventListener("keydown", e => {
-  if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) e.preventDefault();
-});
+// document.addEventListener("contextmenu", e => e.preventDefault());
+// document.addEventListener("keydown", e => {
+//   if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) e.preventDefault();
+// });
 
 setTimeout(showCookie, 600);
 
