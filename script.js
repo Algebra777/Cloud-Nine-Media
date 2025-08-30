@@ -51,7 +51,7 @@ observer.observe(document.querySelector(".stats"));
   const revealEls = document.querySelectorAll('.folio, .about > div');
   Array.prototype.forEach.call(revealEls, function (el, i) {
     // Stagger: 110ms * index (cap to keep reasonable)
-    const delay = Math.min(i * 150, 1500);
+    const delay = Math.min(i * 150, 500);
     el.style.transitionDelay = delay + 'ms';
     io.observe(el);
   });
@@ -117,9 +117,7 @@ function showCookie() {
 function hideCookie(accepted) {
   localStorage.setItem(cookieKey, accepted ? "accepted" : "denied");
   cookieBox.style.display = "none";
-}
-
-document.addEventListener("contextmenu", e => e.preventDefault());
+} document.addEventListener("contextmenu", e => e.preventDefault());
 document.addEventListener("keydown", e => {
   if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) e.preventDefault();
 });

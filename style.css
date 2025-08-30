@@ -244,9 +244,7 @@
       align-items: center;
       text-align: center;
     }
-
   
-
     .stats {
       display: grid;
       grid-template-columns: repeat(2,1fr);
@@ -335,6 +333,12 @@
       box-shadow: var(--shadow);
     }
 
+    .card img {
+      max-width: 100%;
+      object-fit: cover;
+      display: block;
+}
+
     .card h3 {
       margin: 8px 0 6px;
       font-size: 1.25rem;
@@ -410,8 +414,12 @@
       color: #333;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+       align-items: center;
+       padding: 2px 1px;  /* top-bottom smaller */
+       height: 35px;         /* fixed height */
+     
     }
+
 
     /* About */
     .about {
@@ -763,6 +771,13 @@
     .hero-card .tag {
       font-weight: bold;
       color: var(--primary);
+    }
+
+    .hero-card img{
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
     }
 
     .divider {
