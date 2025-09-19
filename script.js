@@ -124,5 +124,77 @@ document.addEventListener("keydown", e => {
 
 setTimeout(showCookie, 600);
 
+
+        // =================
+        // Typewriter Effect
+        // =================
+  function typeEffect(element, text, speed, callback) {
+    let i = 0;
+    function typing() {
+      if (i < text.length) {
+        element.textContent += text.charAt(i);
+        i++;
+        setTimeout(typing, speed);
+      } else if (callback) {
+        callback();
+      }
+    }
+    typing();
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const about1 = document.getElementById("about-text-1");
+    const about2 = document.getElementById("about-text-2");
+    const about3 = document.getElementById("about-text-3");
+
+    const text1 = about1.textContent.trim();
+    const text2 = about2.textContent.trim();
+
+    // for list items
+    const listItems = Array.from(about3.querySelectorAll("li"));
+    const listTexts = listItems.map(li => li.textContent.trim());
+
+    // clear at start
+    about1.textContent = "";
+    about2.textContent = "";
+    listItems.forEach(li => li.textContent = "");
+
+    let triggered = false;
+
+    window.addEventListener("scroll", () => {
+      const aboutSection = document.querySelector(".about");
+      const position = aboutSection.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+
+      if (!triggered && position < screenPosition) {
+        triggered = true;
+
+        // type first two paragraphs
+        typeEffect(about1, text1, 80, () => {
+          typeEffect(about2, text2, 80, () => {
+            
+            // type list items one by one
+            let idx = 0;
+            function typeNextItem() {
+              if (idx < listItems.length) {
+                typeEffect(listItems[idx], listTexts[idx], 80, () => {
+                  idx++;
+                  typeNextItem();
+                });
+              }
+            }
+            typeNextItem();
+
+          });
+        });
+      }
+    });
+  });
+
+  // ================
+  //    Stop Here
+  // ================
+
+
 // Year
 document.getElementById('year').textContent = new Date().getFullYear();

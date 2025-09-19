@@ -43,34 +43,38 @@
 </head>
 
 <body>
-  <!-- ============================
-         HEADER / NAVIGATION
-       ============================ -->
-  <header>
-    <div class="container nav">
-      <div class="brand">
-        <div class="brand-mark">
-          <img src="img/cloudlogo.jpg" alt="CloudNine Media logo" width="48" height="48" decoding="async" />
-        </div>
-        <div>
-          <div>CloudNine Media</div>
-          <div class="tag">Branding • Logos • Publishing</div>
-        </div>
+<!-- ============================
+     HEADER / NAVIGATION
+============================ -->
+<header>
+  <div class="container nav">
+    
+    <!-- BRAND (logo + text) -->
+    <div class="brand">
+      <div class="brand-mark">
+        <img src="img/cloudlogo.jpg" alt="CloudNine Media logo" />
       </div>
-
-      <button class="mobile-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
-
-      <nav aria-label="Primary Navigation">
-        <ul id="menu">
-          <li><a href="#welcome">Welcome</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-        </ul>
-      </nav>
+      <div class="brand-text">
+        <div class="brand-name">CloudNine Media</div>
+        <div class="tag">Branding • Logos • Publishing</div>
+      </div>
     </div>
-  </header>
+
+    <!-- NAVIGATION (desktop + mobile toggle) -->
+    <nav class="navbar" aria-label="Primary Navigation">
+      <button class="mobile-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+      <ul id="menu">
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
 
   <!-- ============================
          MAIN CONTENT
@@ -317,22 +321,26 @@
             <h2>About Us</h2>
           </div>
           <div class="divider"></div>
-          <p class="sub">
+          <p class="sub typewriter" id="about-text-1">
             CloudNine Media, a proud subsidiary of Cloudnine Global Arts Limited, is one of the leading media
             production companies in Ibadan, Southwest Nigeria. We specialize in delivering cutting-edge visual
             productions designed to transform your brand and business goals into compelling, unforgettable visual
             stories.
           </p>
-          <p>
+
+          <p class="typewriter" id="about-text-2">
             Our passion is simple — turning ideas into visuals that inspire, connect, and leave lasting impressions.
             Whether you’re a business, organization, or individual, CloudNine Media is your trusted partner for
             creating exceptional designs that stand out in today’s competitive world.
           </p>
+        </div>
+      </div>
 
+          <div class="container about">
           <div class="hero-card">
             <div class="tag"> <b>Our Core Values</b></div>
             <div class="divider"></div>
-            <ul>
+            <ul class="typewriter" id="about-text-3">
               <li>Inspiration – Sparking ideas that move people</li>
               <li>Integrity – Building trust through honesty and excellence</li>
               <li>Creativity – Delivering fresh, innovative concepts</li>
@@ -343,7 +351,6 @@
             </ul>
           </div>
         </div>
-      </div>
 
       <div class="container about">
         <div class="hero-card">

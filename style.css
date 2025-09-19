@@ -93,6 +93,84 @@
       border-bottom: 1px solid #f0f0f0;
     }
 
+    /* HEADER CONTAINER */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* brand left, nav right */
+  padding: 0.1rem 0.6rem;
+}
+
+/* BRAND */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;    /* circle logo */
+  object-fit: cover;     /* keeps full logo inside */
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem; /* space between nav links */
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+}
+
+/* MOBILE TOGGLE */
+.mobile-toggle {
+  display: none; /* hidden by default */
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* RESPONSIVE (Mobile) */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none; /* hidden until toggle */
+    flex-direction: column;
+    gap: 1rem;
+    background: #fff;
+    padding: 4rem;
+    position: centered;
+    top: 70px;
+    right: 500px;
+    border-radius: 8px;
+    box-shadow: 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .navbar ul.show {
+    display: flex;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+}
+/* =================
+    STOP HERE;;;;;;;
+   ================= */
+
     .nav {
       display: flex;
       align-items: center;
@@ -833,6 +911,30 @@
       flex-wrap: wrap;
       gap: 20px;
     }
+
+    /* TYPEWRITER EFFECT */
+.typewriter {
+  border-right: 2px solid var(--orange); /* blinking cursor */
+  white-space: normal;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink 0.7s step-end infinite alternate;
+}
+
+.typewriter li {
+  border-right: 2px solid var(--orange); /* blinking cursor */
+  white-space: normal;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink 0.7s step-end infinite alternate;
+}
+
+/* blinking cursor animation */
+@keyframes blink {
+  from { border-color: transparent; }
+  to   { border-color: var(--orange); }
+}
+
 
     .about > div {
       flex: 1 1 45%;
